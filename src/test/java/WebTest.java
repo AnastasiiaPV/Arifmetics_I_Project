@@ -18,7 +18,7 @@ public class WebTest {
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         WebElement actualResult = driver.findElement(By.cssSelector("#main h2"));
 

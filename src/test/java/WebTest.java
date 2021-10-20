@@ -22,9 +22,26 @@ public class WebTest {
 
         WebElement actualResult = driver.findElement(By.cssSelector("#main h2"));
 
-        AssertJUnit.assertEquals(expectedResult,actualResult.getText());
+        AssertJUnit.assertEquals(expectedResult, actualResult.getText());
 
         driver.close();
         driver.quit();
+    }
+
+    @Test
+    public void testAvailabilityMenuButtons() {
+        String chromeDriver = "webdriver.chrome.driver";
+        String driverPath = "d:/F_QA_2021/SeleniumDriver/chromedriver.exe";
+        String url = "https://www.coldstonecreamery.com/index.php";
+
+        System.setProperty(chromeDriver, driverPath);
+        WebDriver driver = new ChromeDriver();
+
+        driver.get(url);
+
+        WebElement closeButton = driver.findElement(By.xpath("//div[contains(@class,'close-button')]"));
+        closeButton.click();
+
+
     }
 }

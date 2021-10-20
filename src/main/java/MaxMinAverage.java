@@ -9,22 +9,22 @@ public class MaxMinAverage {
         int max = numbers[0];
         int min = numbers[0];
         int average = numbers[0];
-        int count = 1;
+//        int count = 1;
 
         for (int i = 1; i < numbers.length; i++) {
             average+=numbers[i];
             if(numbers[i]<max){
                 min=numbers[i];
-                count++;
+                //count++;
             } else {
                 max=numbers[i];
-                count++;
+              //  count++;
             }
         }
-        average/=count;
+        //average/=count;
         maxMinAverage[0]=max;
         maxMinAverage[1]=min;
-        maxMinAverage[2]=average;
+        maxMinAverage[2]=average/numbers.length;
 
         System.out.println(Arrays.toString(maxMinAverage));
         return maxMinAverage;

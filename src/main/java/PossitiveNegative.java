@@ -13,3 +13,6 @@ public class PossitiveNegative {
         }
     }
 }
+//another tight variant for solving only one line
+
+//!!!!!!!!!!!!!!    return(number>=0);

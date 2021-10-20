@@ -9,7 +9,7 @@ public class FizzBuzz {
         String[] array = new String[N];
 
         for (int i = 1; i < N; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
+            if (i % 15 == 0) {
                 array[i] = "FizzBuzz";
                 //System.out.print(" FizzBuzz ");
             } else if (i % 3 == 0) {

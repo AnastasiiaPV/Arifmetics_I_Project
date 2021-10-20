@@ -41,7 +41,5 @@ public class WebTest {
 
         WebElement closeButton = driver.findElement(By.xpath("//div[contains(@class,'close-button')]"));
         closeButton.click();
-
-
     }
 }

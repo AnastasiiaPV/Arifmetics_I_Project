@@ -9,7 +9,7 @@ public class DeleteSpace_ToLoverCaseTest {
     @Test
     public void testDeleteSpaceToLowerCase(){
         String expectedResult = "qaforeveryone";
-        String actualResult = DeleteSpace_ToLoverCase.deleteSpaceToLoverCase("QA For  Everyone ");
+        String actualResult = DeleteSpace_ToLoverCase.deleteSpaceToLoverCase1("QA For  Everyone ");
 
         AssertJUnit.assertEquals(expectedResult,actualResult);
     }

@@ -1,0 +1,18 @@
+package HW_19_20;
+
+public class Task_1_String_n_times {
+    //1.Напишите метод, который выводит строковый параметр  n раз и показывает количество символов в новой строке.
+
+    public static String printStringNTimes (String stringParam, int n){
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (int i = 0; i < n; i++) {
+            stringBuilder.append(stringParam).append(" ");
+        }
+        String string = stringBuilder.toString();
+        int amount = string.length();
+
+        System.out.println(stringBuilder.append(amount));
+        return string;
+    }
+}

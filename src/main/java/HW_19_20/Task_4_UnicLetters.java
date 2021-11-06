@@ -20,8 +20,7 @@ public class Task_4_UnicLetters {
         }
 
         StringBuilder stringBuilder = new StringBuilder();
-        String newStr=str;
-        char[] arr = newStr.toCharArray();
+        char[] arr = str.toCharArray();
 
         for (int i = 0; i < str.length(); i++) {
             if(arr[i] != ' '){

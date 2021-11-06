@@ -1,6 +1,6 @@
 package HW_19_20;
 
-public class Task_4_UnicLetters {
+public class Task_4_UniqueLetters {
     //
 //Написать метод, который принимает на вход строку букв,  и  возвращает строку, в которой только уникальные буквы
 //

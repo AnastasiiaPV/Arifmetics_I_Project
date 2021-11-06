@@ -13,7 +13,7 @@ public class Task_4_UnicLettersTest {
     @Test
     public void testUnicLetters(){
         String expectedResult = "whatonderfuly";
-        String actualResult = Task_4_UnicLetters.getUnicLetters("What a wonderful day");
+        String actualResult = Task_4_UniqueLetters.getUnicLetters("What a wonderful day");
 
         AssertJUnit.assertEquals(expectedResult, actualResult);
     }
@@ -21,7 +21,7 @@ public class Task_4_UnicLettersTest {
     @Test
     public void testUnicLetters1(){
         String expectedResult = "abczdk";
-        String actualResult = Task_4_UnicLetters.getUnicLetters("abcaczdbdakcazdbaz");
+        String actualResult = Task_4_UniqueLetters.getUnicLetters("abcaczdbdakcazdbaz");
 
         AssertJUnit.assertEquals(expectedResult, actualResult);
     }

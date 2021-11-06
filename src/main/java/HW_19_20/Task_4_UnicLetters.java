@@ -18,7 +18,7 @@ public class Task_4_UnicLetters {
         if (str.length() <= 1) {
             return str;
         }
-
+        str=str.toLowerCase();
         StringBuilder stringBuilder = new StringBuilder();
         String newStr=str;
         char[] arr = newStr.toCharArray();
@@ -40,7 +40,7 @@ public class Task_4_UnicLetters {
         if (str.length() <= 1) {
             return str;
         }
-
+       str=str.toLowerCase();
         StringBuilder stringBuilder = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {

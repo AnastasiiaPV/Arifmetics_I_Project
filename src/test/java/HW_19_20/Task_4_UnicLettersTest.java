@@ -12,8 +12,8 @@ public class Task_4_UnicLettersTest {
 //“abczdk"
     @Test
     public void testUnicLetters(){
-        String expectedResult = "Whatwonderfuly!";
-        String actualResult = Task_4_UnicLetters.getUnicLetters("What a wonderful day!");
+        String expectedResult = "whatonderfuly";
+        String actualResult = Task_4_UnicLetters.getUnicLetters("What a wonderful day");
 
         AssertJUnit.assertEquals(expectedResult, actualResult);
     }

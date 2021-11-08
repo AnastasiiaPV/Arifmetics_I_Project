@@ -15,7 +15,9 @@ public class Task_10_IsPalindrome {
     //
     //method(“Madam”) -> true    это палиндром
     //method(12321) -> true
+
     public static boolean isPalindrome (String str) {
+        str = str.trim();
         StringBuilder sb = new StringBuilder();
         if(str.contains(" ")){
             str=str.replace(" ","");
@@ -34,4 +36,10 @@ public class Task_10_IsPalindrome {
         System.out.println(str.toLowerCase());
         return false;
     }
+    //!!!   достроить строку сделать ее палиндром //method(“?ad?m”) -> true    это палиндром
+// проверяем длина четная или не четная,
+// потом ищем серединку и работаем от серединки,
+// если одна буква не известна тогда ставим ту которая известна ,
+// есои две не известны *ьвж**ддвв то ставим любую букву,
+// потом проверяет где вопросительный знак
 }

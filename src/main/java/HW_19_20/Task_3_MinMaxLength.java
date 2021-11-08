@@ -10,20 +10,25 @@ public class Task_3_MinMaxLength {
     //“I love to to to learn Java mava!” -> [“I”, “learn”, “3”]
 
     public static void main(String[] args) {
-        getMinMaxLetter("I love to to to learn Java mava!");
+        getMinMaxLetter("I love to to to, learn Java mava!");
     }
 
     public static String[] getMinMaxLetter(String str) {
 
-        String[] words = str.split("\\s+");
+        String[] words = str.split("\\s+"); //[I, love, to, to, to, learn, Java, mava!]
+        System.out.println(Arrays.toString(words));
+
+        for (int i = 0; i < words.length; i++) {
+            words[i] = words[i].replaceAll("[^\\w]", "");
+        }
+        System.out.println(Arrays.toString(words));
         String min = "";
         String max = "";
         int count = 0;
         int maxLength = Integer.MIN_VALUE;
         int minLength = Integer.MAX_VALUE;
-        for (int i = 0; i < words.length; i++) {
-            words[i] = words[i].replaceAll("[^\\w]", "");
-        }
+
+
         for (int i = 0; i < words.length; i++) {
             for (int j = i + 1; j < words.length; j++) {
                 if (words[i].length() < minLength) {
@@ -43,8 +48,8 @@ public class Task_3_MinMaxLength {
             }
             count = 0;
             maxLength -= i;
-            for (int j = 0; j < words.length; j++) {
-                if (maxLength == words[j].length()) {
+            for (String word : words) {
+                if (maxLength == word.length()) {
                     count++;
                 }
             }

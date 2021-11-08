@@ -12,8 +12,8 @@ public class Task_11_isAnagramTest {
     //method("Oh, lame saint!", "The Mona Lisa,!") -> true
     @Test
     public void testIsAnagram(){
-        boolean expectedResult = true;
-        boolean actualResult = Task_11_IsAnagram.isAnagram("O, Draconian devil!","!Leonardo Da Vinci,");
+        boolean expectedResult = false;
+        boolean actualResult = Task_11_IsAnagram.isAnagram("AALL","ALLL");
 
         AssertJUnit.assertEquals(expectedResult,actualResult);
     }

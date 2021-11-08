@@ -9,15 +9,16 @@ public class Task_4_UniqueLetters {
 //    Вернуть
 //“abczdk"
     public static void main(String[] args) {
-        System.out.println(getUnicLetters("abcaczdbdakcazdbaz"));
-        System.out.println(getUnicLetters1("abcaczdbdakcazdbaz"));
+        System.out.println(getUniqueLetters("abcaczdbdakcazdbaz"));
+        System.out.println(getUniqueLetters1("abcaczdbdakcazdbaz"));
 
     }
 
-    public static String getUnicLetters(String str) {
+    public static String getUniqueLetters(String str) {
         if (str.length() <= 1) {
             return str;
         }
+
         str=str.toLowerCase();
         StringBuilder stringBuilder = new StringBuilder();
         String newStr=str;
@@ -36,11 +37,12 @@ public class Task_4_UniqueLetters {
         return stringBuilder.toString();
     }
 
-    public static String getUnicLetters1(String str) {
+    public static String getUniqueLetters1(String str) {
         if (str.length() <= 1) {
             return str;
         }
-       str=str.toLowerCase();
+
+        str=str.toLowerCase();
         StringBuilder stringBuilder = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {

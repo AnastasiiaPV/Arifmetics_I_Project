@@ -26,7 +26,7 @@ public class Task_3_MinMaxLengthTest {
     @Test
     public void testMinMaxCountLetters2(){
         String[] expectedResult = new String[]{"I", "learn", "3"};
-        String[] actualResult = Task_3_MinMaxLength.getMinMaxLetter("I love to learn Java mava!");
+        String[] actualResult = Task_3_MinMaxLength.getMinMaxLetter("I love to to learn Java mava!");
 
         AssertJUnit.assertArrayEquals(expectedResult, actualResult);
     }

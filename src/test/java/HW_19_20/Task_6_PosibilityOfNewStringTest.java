@@ -8,7 +8,7 @@ public class Task_6_PosibilityOfNewStringTest {
     //
     //      Пример:
     //method( “QAForEveryone”, “Verona”) -> true
-    //method( “QAForEveryone”, “frog”) -> false
+    //method( “QAForEveryone”, “froggg”) -> false
     @Test
     public void testIsNewString(){
         boolean expectedResult = true;
@@ -18,7 +18,7 @@ public class Task_6_PosibilityOfNewStringTest {
     @Test
     public void testIsNewString1(){
         boolean expectedResult = false;
-        boolean actualResult = Task_6_PosibilityOfNewString.isNewString("QAForEveryone","frog");
+        boolean actualResult = Task_6_PosibilityOfNewString.isNewString("QAForEveryone","froggg");
         AssertJUnit.assertEquals(expectedResult,actualResult);
     }
 }

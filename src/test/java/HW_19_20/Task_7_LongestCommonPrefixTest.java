@@ -6,7 +6,7 @@ import org.testng.AssertJUnit;
 public class Task_7_LongestCommonPrefixTest {
     //Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
     //Example 1:
-    //Input: String[] strs = {"flower","flow","flight"}
+    //Input: String[] strs = {"flower","flow","floight"}
     //Output: "fl"
     //Example 2:
     //Input: String[] strs = {"dog","racecar","car"}
@@ -14,8 +14,8 @@ public class Task_7_LongestCommonPrefixTest {
     //Explanation: There is no common prefix among the input strings.
     @Test
     public void testIsCommonPrefix(){
-        String expectedResult = "fl";
-        String actualResult = Task_7_LongestCommonPrefix.getLongestPrefix("flower","flow","flight");
+        String expectedResult = "flo";
+        String actualResult = Task_7_LongestCommonPrefix.getLongestPrefix("flower","flowar","floirht");
         AssertJUnit.assertEquals(expectedResult,actualResult);
     }
 

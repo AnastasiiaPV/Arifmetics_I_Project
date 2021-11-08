@@ -9,6 +9,9 @@ public class Task_11_IsAnagram {
     //method("O, Draconian devil!", "!Leonardo Da Vinci,")  -> true
     //method("Oh, lame saint!", "The Mona Lisa,!") -> true
     public static boolean isAnagram(String str1, String str2){
+        str1= str1.trim();
+        str2= str2.trim();
+
         if(str1.length()!=str2.length()){
             return false;
         }
@@ -19,4 +22,5 @@ public class Task_11_IsAnagram {
         }
         return true;
     }
+    // удалять букву!!!!
 }
